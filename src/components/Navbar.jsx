@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <header className="header w-full">
-        <NavLink to="/" className="p-2 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
+    <header className="header w-full flex flex-col sm:flex-row justify-between items-center p-4">
+        <NavLink to="/" className="p-2 rounded-lg bg-white items-center justify-center flex font-bold shadow-md mb-4 sm:mb-0">
             <p className="blue-gradient_text text-lg">ASHIF's PortFolio</p>
         </NavLink>
         <nav className="flex text-2xl gap-7 font-medium">

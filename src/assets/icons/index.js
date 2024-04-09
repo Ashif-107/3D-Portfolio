@@ -22,6 +22,7 @@ import youtube from './Youtube.png'
 import Gemini from './gemini_icon.png'
 import Chat from './chat.png'
 import hand from './hand.png'
+import bootstrap from './bootstrap.png'
 import shoe from './shoe.png'
 
 export {
@@ -49,5 +50,6 @@ export {
     youtube,
     Gemini,
     Chat,
+    bootstrap,
     hand
 }

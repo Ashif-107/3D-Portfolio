@@ -18,7 +18,8 @@ import {
     youtube,
     hand,
     Gemini,
-    shoe
+    shoe,
+    bootstrap
 } from "../assets/icons";
 
 export const skills = [
@@ -81,6 +82,12 @@ export const skills = [
     },
     {
         imageUrl: tailwindcss,
+        name: "Tailwind CSS",
+        type: "Frontend",
+    },
+    
+    {
+        imageUrl: bootstrap,
         name: "Tailwind CSS",
         type: "Frontend",
     },
