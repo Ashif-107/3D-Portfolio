@@ -1,18 +1,24 @@
 
 import { Canvas } from '@react-three/fiber'
 import { useState, Suspense, useEffect, useRef } from 'react'
-import Loader from '../components/Loader' 
+import Loader from '../components/Loader'
 import Island from '../models/island'
 import Sky from '../models/Sky'
 import Bird from '../models/bird'
 import Plane from '../models/plane'
 import HomeInfo from '../components/HomeInfo'
+import { useMediaQuery } from 'react-responsive'
 
 
 import sakura from '../assets/music.mp3'
 import { soundoff, soundon } from '../assets/icons'
 
 const Home = () => {
+
+
+
+    const isMobile = useMediaQuery({ query: '(max-width: 700px)' })
+
 
     const audioRef = useRef(new Audio(sakura));
     audioRef.current.loop = true;
@@ -56,7 +62,7 @@ const Home = () => {
         let planePosition = [0, -1.5, 0];
 
         if (window.innerWidth < 768) {
-            planeScale = [0.04,0.04,0.04];
+            planeScale = [0.04, 0.04, 0.04];
             planePosition = [0, -2.5, 0];
         }
         else {
@@ -111,6 +117,12 @@ const Home = () => {
                     onClick={() => setIsPlayingMusic(!isplayingmusic)}
                     src={!isplayingmusic ? soundoff : soundon} alt="" />
             </div>
+
+
+            <h1 className='absolute bottom-4 right-4 text-md font-black text-black'>
+
+            {isMobile ? 'swipe to advance the plane 👆' : 'Use Mouse or Arrow Keys 🔼 to advance the flight '}
+            </h1>
         </section>
     )
 }
