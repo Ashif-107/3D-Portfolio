@@ -1,8 +1,8 @@
-#Live at
+## Live at
 
 itzashif.me
 
-#Tech Stack
+## Tech Stack
 
 React 
 Three fiber and drei
