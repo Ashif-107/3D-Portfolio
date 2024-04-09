@@ -32,8 +32,6 @@ export {
     html,
     javascript,
     mongodb,
-    
-    
     nextjs,
     nodejs,
     react,
