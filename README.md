@@ -1,6 +1,6 @@
 ## Live at
 
-itzashif.me
+https://ashif-3d-portfolio.vercel.app/
 
 ## Tech Stack
 
